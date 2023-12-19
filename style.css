@@ -65,7 +65,7 @@ body{
 }
 /* Style untuk Hero Section */
 .hero-section {
-    background-image: url('background-image.png'); /* Ganti dengan URL gambar latar belakang Anda */
+    background-image: url('/assets/foto/background-image.png'); /* Ganti dengan URL gambar latar belakang Anda */
     background-size: cover;
     background-position: center;
     height: 100vh;
