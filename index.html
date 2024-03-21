@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>.:: MikaIT Blog ::.</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 onclick="javascript:msg1()">.:: MikaIT Blog ::.</h1>
+</header>
+
+<nav class="menu-items">
+    <a href="../">Home</a>
+    <a href="#">Articles</a>
+    <a href="/about-me/">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="menu-toggle" onclick="toggleMenu()">
+    Menu
+</div>
+
+<section class="container">
+    <a id="loadButton" href="#" class="article">
+        <h2>Teknologi Berkembang Pesat</h2>
+        <p>Teknologi telah menjadi bagian integral dari kehidupan sehari-hari, terutama sejak dimulainya pandemi COVID-19 <span style="font-size: 20px;letter-spacing: 4px;">...</span></p>
+    </a>
+    
+    <!-- <a href="#" class="article">
+        <h2>Judul Artikel Kedua</h2>
+        <p>Ini adalah isi dari artikel kedua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </a> -->
+
+
+
+
+
+    <div id="loadingAnimation" class="hide">
+        <!-- Animation here (e.g., spinner, loading bar) -->
+        <div class="spinner"></div>
+    </div>
+    <div id="content" class="hide">
+        <!-- Content to be loaded here -->
+        <p>Terjadi Masalah Ketika Loading ...</p>
+    </div>
+    
+</section>
+<p style="text-align: center;display: block;">Akan Datang . . .</p>
+
+<footer>
+    <p>&copy; 2024 MuiT. All rights reserved.</p>
+</footer>
+<script>alert("Klik logo nama untuk info lanjut!")</script>
+<script src="script.js"></script>
+</body>
+</html>
