@@ -33,6 +33,7 @@
       display:inline-block;
     }
     .content{
+      display:none;
       background:#FFEDF3;
     }
     .br{
@@ -64,5 +65,13 @@
       </ul>
     </p>
   </div>
+  <script>
+    // geram nak pakai jquery untuk!
+    setTimeout(function(){
+    document.getElementsByClassName("content").forEach((e)=>{
+      e.style.display = "visible"
+    })
+    },2000)
+  </script>
 </body>
 </html>
