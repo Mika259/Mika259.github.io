@@ -52,7 +52,7 @@
     .block{
       display:block;
     }
-    img#loading{
+    img.loading{
       margin-top:10px;
       margin-bottom:10px;
       border:none;
@@ -61,7 +61,7 @@
 </head>
 <body>
   <h1 class="greet br default">Selamat datang ke Portfolio saya!</h1>
-  <img src="https://media.tenor.com/WX_LDjYUrMsAAAAi/loading.gif" width="100px" id="loading" class="center">
+  <img src="https://media.tenor.com/WX_LDjYUrMsAAAAi/loading.gif" width="100px" class="loading center">
   <div class="content br default">
     <img src="https://avatars.githubusercontent.com/u/87774553" width="140px" style="border-radius:50%;" class="center"/>
     <h2 class="center">About me</h2>
@@ -76,7 +76,7 @@
     </p>
   </div>
   <h2 class="greet center br default">Quote</h2>
-  <img src="https://media.tenor.com/WX_LDjYUrMsAAAAi/loading.gif" width="100px" id="loading" class="center">
+  <img src="https://media.tenor.com/WX_LDjYUrMsAAAAi/loading.gif" width="100px" class="loading center">
   <div class="content br default">
     <p>Tiada istilah malas bagi orang yang mahu berjaya!</p>
   </div>
@@ -89,11 +89,12 @@
   <script>
     // geram nak pakai jquery untuk!
     const content = document.getElementsByClassName("content")
-    const loading = document.getElementById("loading")
+    const loading = document.getElementsByClassName("loading")
     setTimeout(function(){
     for(let i = 0;i < content.length;i++){
       content[i].style.display = "block"
-      loading.style.display = "none"
+      loading[0].style.display = "none"
+      loading[1].style.display = "none"
     }
     },2000)
   </script>
