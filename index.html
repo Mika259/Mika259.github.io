@@ -67,10 +67,11 @@
   </div>
   <script>
     // geram nak pakai jquery untuk!
+    const content = document.getElementsByClassName("content")
     setTimeout(function(){
-    document.getElementsByClassName("content").forEach((e)=>{
-      e.style.display = "visible"
-    })
+    for(let i = 0;i < content.length;i++){
+      content[i].style.display = "block"
+    }
     },2000)
   </script>
 </body>
