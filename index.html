@@ -60,9 +60,21 @@
     .content *,p *{
       font-family:'Roboto Mono',sans-serif;
     }
+    .container{
+      display:flex;
+      flex-direction:column;
+    }
+    @media(min-width:600px){
+      .container{
+        flex-direction:row;
+        align-items:flex-start;
+      }
+    }
   </style>
 </head>
 <body>
+  <div class="container">
+  <div class="section">
   <h1 class="greet br default">Selamat datang ke Portfolio saya!</h1>
   <img src="https://media.tenor.com/WX_LDjYUrMsAAAAi/loading.gif" width="70px" class="loading center">
   <div class="content br default">
@@ -77,6 +89,8 @@
         <li>Good boy</li>
       </ul>
   </div>
+  </div>
+  <div class="container">
   <h2 class="greet br default" style="text-align:center;">Quote</h2>
   <img src="https://media.tenor.com/WX_LDjYUrMsAAAAi/loading.gif" width="70px" class="loading center">
   <div class="content br default">
@@ -87,6 +101,8 @@
       No money no talk ❌[False]<br>
       No akhlak no talk ✅[True]
     </p>
+  </div>
+  </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script>
