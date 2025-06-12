@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Apa yang dicari tu? ni bukan template, ini css dan js vanilla boh!
+  Apa yang dicari tu? ni bukan template css!
 -->
 <html>
 <head>
@@ -89,13 +89,20 @@
     </p>
   </div>
   <script>
-    // geram nak pakai jquery untuk!
-    const content = document.getElementsByClassName("content")
-    const loading = document.getElementsByClassName("loading")
-    setTimeout(() => {
-       [...content].forEach(c => c.style.display = "block");
-       [...loading].forEach(l => l.style.display = "none");
-    }, 2000);
-  </script>
+    // geram nak pakai jquery untuk.. !
+  $(document).ready(function() {
+    setTimeout(function() {
+      $(".loading").hide();
+
+      $(".content").each(function(i) {
+        const el = $(this);
+        setTimeout(function() {
+          el.fadeIn(500);
+        }, i * 500); // delay setiap content ikut index
+      });
+
+    }, 2000); // tunggu 2 saat untuk loading
+  });
+</script>
 </body>
 </html>
