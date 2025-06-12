@@ -92,13 +92,10 @@
     // geram nak pakai jquery untuk!
     const content = document.getElementsByClassName("content")
     const loading = document.getElementsByClassName("loading")
-    setTimeout(function(){
-    for(let i = 0;i < content.length;i++){
-      content[i].style.display = "block"
-      loading[0].style.display = "none"
-      loading[1].style.display = "none"
-    }
-    },2000)
+    setTimeout(() => {
+       [...content].forEach(c => c.style.display = "block");
+       [...loading].forEach(l => l.style.display = "none");
+    }, 2000);
   </script>
 </body>
 </html>
